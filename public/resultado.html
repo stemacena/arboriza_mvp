@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arboriza - Resultado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.378.0/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cinza">
+    <div id="app-container" class="max-w-md mx-auto bg-branco shadow-lg" style="height: 100vh; display: flex; flex-direction: column; position: relative; overflow: hidden;">
+        <main class="flex-grow overflow-y-auto">
+             <div id="screen-identification-result" class="p-6 flex flex-col h-full fade-in">
+                <div class="text-center mb-6">
+                    <img id="result-image" src="" class="w-32 h-32 rounded-full object-cover mx-auto border-4 border-white shadow-lg -mt-16" alt="Foto da planta">
+                    <h2 class="text-3xl font-bold text-verde-principal mt-4">Encontramos!</h2>
+                    <p class="text-gray-600">Acreditamos que esta seja a espécie:</p>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow text-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ipê Amarelo</h3>
+                    <p class="text-gray-500 italic">Handroanthus chrysotrichus</p>
+                    <div class="flex items-center justify-center mt-2 text-sm text-gray-500">
+                        <span>Identificado por:</span>
+                        <img src="https://logowik.com/content/uploads/images/plantnet-icon3265.logowik.com.webp" alt="PlantNet Logo" class="w-16 h-auto ml-1">
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <a href="cuidar.html" class="block w-full text-center bg-sucesso text-white font-bold py-3 px-4 rounded-xl shadow-lg">É essa mesmo!</a>
+                    <button class="block w-full text-center bg-alerta text-alerta-dark font-bold py-3 px-4 rounded-xl shadow-lg">Não parece ser essa</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
