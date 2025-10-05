@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arboriza - Mapa</title>
+    
+    <!-- Tailwind e Fontes (sem alterações) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones Lucide (sem alterações) -->
     <script src="https://unpkg.com/lucide@0.378.0/dist/umd/lucide.min.js"></script>
+    
+    <!-- Estilos da Leaflet (NOVO) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- Seus Estilos Customizados (sem alterações) -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-cinza">
@@ -14,7 +23,10 @@
         <main class="flex-grow overflow-y-auto">
             <div id="screen-map" class="flex flex-col h-full fade-in">
                 <div class="p-4 bg-white shadow-md z-10"><input type="text" placeholder="🔍 Buscar local..." class="w-full p-3 bg-cinza rounded-lg border-2 border-transparent focus:border-verde-principal outline-none"></div>
-                <div id="map-container" class="flex-grow bg-gray-300 text-gray-500 flex items-center justify-center">Carregando mapa...</div>
+                
+                <!-- O container do mapa continua o mesmo -->
+                <div id="map-container" class="flex-grow bg-gray-300"></div>
+
                 <a href="camera.html" class="absolute bottom-24 right-6 w-16 h-16 bg-verde-principal text-white rounded-full shadow-lg flex items-center justify-center z-10"><i data-lucide="scan-line" class="w-8 h-8"></i></a>
             </div>
         </main>
@@ -27,8 +39,11 @@
             <a href="perfil.html" class="flex-1 flex flex-col items-center justify-center p-2 text-gray-400"><i data-lucide="user" class="w-6 h-6"></i><span class="text-xs font-semibold mt-1">Perfil</span></a>
         </nav>
     </div>
-    <!-- Script do Google Maps - Adicione sua chave no final da URL -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_GOOGLE_MAPS_AQUI&callback=initMap" async defer></script>
+
+    <!-- Script da Leaflet (NOVO) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Seu script principal do app -->
     <script src="js/app.js" type="module"></script>
 </body>
 </html>
