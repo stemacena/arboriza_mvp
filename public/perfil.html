@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arboriza - Perfil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.378.0/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cinza">
+    <div id="app-container" class="max-w-md mx-auto bg-branco shadow-lg" style="height: 100vh; display: flex; flex-direction: column; position: relative; overflow: hidden;">
+        <main class="flex-grow overflow-y-auto">
+            <div id="screen-profile" class="p-6 fade-in">
+                <div class="flex items-center mb-6">
+                    <img src="https://placehold.co/80x80/D6BCFA/FFFFFF?text=S" class="w-20 h-20 rounded-full mr-4 border-4 border-verde-claro">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Stephannie</h2>
+                        <p class="text-gray-500">Nível 12 - Guardiã das Matas</p>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <div class="flex justify-between items-center text-sm mb-1">
+                        <span class="text-gray-600">Progresso</span>
+                        <span class="font-semibold text-verde-principal">2850 / 4000 XP</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-4"><div class="bg-progress-gradient h-4 rounded-full" style="width: 71.25%;"></div></div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 text-center mb-8">
+                    <a href="arvores-adotadas.html" class="bg-white p-4 rounded-xl shadow transition-all hover:shadow-md"><p class="text-2xl font-bold text-verde-principal">2</p><p class="text-gray-500">Árvores Adotadas</p></a>
+                    <a href="missoes-concluidas.html" class="bg-white p-4 rounded-xl shadow transition-all hover:shadow-md"><p class="text-2xl font-bold text-verde-principal">18</p><p class="text-gray-500">Missões Concluídas</p></a>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Ranking da Região</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center bg-white p-3 rounded-xl shadow"><span class="font-bold text-lg mr-4">1º</span><img src="https://placehold.co/40x40/99C3FF/FFFFFF?text=JP" class="w-10 h-10 rounded-full mr-3"><div><p class="font-semibold">João Pedro</p><p class="text-sm text-gray-500">3500 XP</p></div><span class="ml-auto font-bold text-yellow-500"><i data-lucide="trophy"></i></span></div>
+                        <div class="flex items-center bg-verde-claro p-3 rounded-xl shadow"><span class="font-bold text-lg mr-4">2º</span><img src="https://placehold.co/40x40/D6BCFA/FFFFFF?text=S" class="w-10 h-10 rounded-full mr-3"><div><p class="font-semibold">Você</p><p class="text-sm text-gray-600">2850 XP</p></div></div>
+                        <div class="flex items-center bg-white p-3 rounded-xl shadow"><span class="font-bold text-lg mr-4">3º</span><img src="https://placehold.co/40x40/FFCBA4/FFFFFF?text=MA" class="w-10 h-10 rounded-full mr-3"><div><p class="font-semibold">Maria Alice</p><p class="text-sm text-gray-500">2790 XP</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <nav class="bg-white shadow-t-lg border-t border-gray-200 flex justify-around">
+            <a href="mapa.html" class="flex-1 flex flex-col items-center justify-center p-2 text-gray-400"><i data-lucide="map" class="w-6 h-6"></i><span class="text-xs font-semibold mt-1">Mapa</span></a>
+            <a href="sabermais.html" class="flex-1 flex flex-col items-center justify-center p-2 text-gray-400"><i data-lucide="graduation-cap" class="w-6 h-6"></i><span class="text-xs font-semibold mt-1">Saber Mais</span></a>
+            <a href="feed.html" class="flex-1 flex flex-col items-center justify-center p-2 text-gray-400"><i data-lucide="newspaper" class="w-6 h-6"></i><span class="text-xs font-semibold mt-1">Feed</span></a>
+            <a href="conquistas.html" class="flex-1 flex flex-col items-center justify-center p-2 text-gray-400"><i data-lucide="award" class="w-6 h-6"></i><span class="text-xs font-semibold mt-1">Conquistas</span></a>
+            <a href="perfil.html" class="flex-1 flex flex-col items-center justify-center p-2 text-verde-principal"><i data-lucide="user" class="w-6 h-6"></i><span class="text-xs font-semibold mt-1">Perfil</span></a>
+        </nav>
+    </div>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arboriza - Identificar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.378.0/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cinza">
+    <div id="app-container" class="max-w-md mx-auto bg-branco shadow-lg" style="height: 100vh; display: flex; flex-direction: column; position: relative; overflow: hidden;">
+        <main class="flex-grow overflow-y-auto">
+            <div id="screen-camera" class="p-6 flex flex-col h-full fade-in">
+                <a href="mapa.html" class="text-gray-600 mb-4 flex items-center"><i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i> Voltar</a>
+                <h2 class="text-3xl font-bold text-verde-principal mb-4">Identificar Planta</h2>
+                <div class="camera-viewfinder">
+                    <div class="camera-viewfinder-content">
+                        <img id="plant-photo-preview" src="" class="w-full h-full object-cover hidden" alt="Prévia da foto">
+                        <div id="plant-photo-placeholder" class="text-center">
+                            <i data-lucide="image-plus" class="w-16 h-16 text-gray-400"></i>
+                            <p class="mt-2">Envie uma foto para identificar</p>
+                        </div>
+                    </div>
+                </div>
+                <input type="file" id="plant-photo-input" accept="image/*">
+                <div class="mt-6 flex gap-4">
+                    <label for="plant-photo-input" class="flex-1 text-center bg-verde-claro text-verde-principal font-bold py-3 px-4 rounded-xl shadow-lg cursor-pointer"><i data-lucide="upload" class="w-6 h-6 inline-block mr-2"></i>Galeria</label>
+                    <button class="flex-1 text-center bg-verde-claro text-verde-principal font-bold py-3 px-4 rounded-xl shadow-lg"><i data-lucide="camera" class="w-6 h-6 inline-block mr-2"></i>Câmera</button>
+                </div>
+                <button id="btn-identify-plant" class="hidden mt-4 w-full bg-verde-principal text-white font-bold py-4 px-4 rounded-xl shadow-lg">IDENTIFICAR</button>
+            </div>
+        </main>
+    </div>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
